@@ -1,0 +1,40 @@
+//employees query
+{
+  employees{
+    id
+  }
+}
+
+// filter query
+{
+  filterByEmployer(input:{role:JuniorDeveloper}){
+    id
+  }
+}
+# mutation createEmployee($newEmployee:NewEmployeeInput!){
+#   addEmployee(input:$newEmployee){
+#     id
+#     name
+#   }
+# }
+
+# {
+#   employees{
+#     name
+#     id
+#     role
+#     createdAt
+#     img
+#   }
+# }
+# mutation{
+#   updateEmployee(input:{name:"Somi", id:"2IQvC2b_MJsaDpt5NmF3p", role:JuniorDeveloper, employer:Google, img:"www.ocm", createdAt:"1580361112755"}){
+# 		id
+#     name
+#   }
+# }
+# mutation{
+#   deleteEmployee(input:{id:"LjAhL25Jwkj-4dDKNHpWG"}){
+# 		name
+#   }
+# }
