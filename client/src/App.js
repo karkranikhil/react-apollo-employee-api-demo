@@ -1,14 +1,11 @@
 import React from 'react';
 import EmployeePortal from './EmployeePortal'
+import Header from './Header'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        React Apollo Employee Management Demo
-      </header>
-      <div>
+        <Header/>
         <EmployeePortal/>
-      </div>
     </div>
   );
 }
