@@ -1,3 +1,10 @@
+//CLient setup
+npx create react app
+ yarn add  apollo-client apollo-cache-inmemory apollo-link-http  graphql-tag @apollo/react-hooks
+yarn add react-spinners 
+
+concurrently
+
 //employees query
 {
   employees{
@@ -27,14 +34,21 @@
 #     img
 #   }
 # }
-# mutation{
-#   updateEmployee(input:{name:"Somi", id:"2IQvC2b_MJsaDpt5NmF3p", role:JuniorDeveloper, employer:Google, img:"www.ocm", createdAt:"1580361112755"}){
-# 		id
-#     name
+# mutation updateEmployeeData($updateEmployee: updatedEmployee!) {
+#     updateEmployee(input: $updateEmployee) {
+#         name
+#         id
+#         role
+#         createdAt
+#         img
+#         employer
+#     }
 #   }
-# }
-# mutation{
-#   deleteEmployee(input:{id:"LjAhL25Jwkj-4dDKNHpWG"}){
-# 		name
+# mutation deleteEmployeeData($deleteEmployee: EmployeesId!) {
+#     deleteEmployee(input: $deleteEmployee) {
+#         name
+#     }
 #   }
-# }
+# {
+  "deleteEmployee":{
+    "id":"pCb5eFhJQv26liFqmmwvp"}}

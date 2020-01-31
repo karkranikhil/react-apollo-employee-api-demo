@@ -2,6 +2,7 @@ const nanoid = require('nanoid')
 module.exports = {
   Query: {
     employees(parent,args, {db}) {
+        console.log("called")
       return db.employeesList
     },
     filterByEmployer(_, {input}, {db}){
@@ -35,12 +36,11 @@ module.exports = {
   },
   Employee: {
     img(employee) {
-        console.log("called",employee )
       return employee.employer === 'Google'
-        ? 'https://www.readyartwork.com/wp-content/uploads/2015/09/Google-iconic-logo-min.png':
-        employee.employer === 'Twitter' ?'https://www.readyartwork.com/wp-content/uploads/2015/09/Twitter-Iconic-Logo-min.png':
-        employee.employer === 'Apple' ? 'https://www.readyartwork.com/wp-content/uploads/2015/09/download-1.png':
-        employee.employer === 'Amazon' ? 'https://www.readyartwork.com/wp-content/uploads/2015/09/amazon-iconic-logo.jpg' :
+        ? 'https://www.stickpng.com/assets/images/5a951939c4ffc33e8c148af2.png':
+        employee.employer === 'Twitter' ?'https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png':
+        employee.employer === 'Apple' ? 'https://www.pinclipart.com/picdir/big/210-2100125_apple-logo-png-transparent-svg-vector-apple-logo.png':
+        employee.employer === 'Instagram' ? 'https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c521.png' :
         'https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/_Unknown.png'
     }
   },

@@ -2,10 +2,24 @@
     "employeesList": [
     {
       "id": "pCb5eFhJQv26liFqmmwvR",
-      "role": "JuniorDeveloper",
+      "role": "Junior_Developer",
       "name": "Nikhil karkra",
       "employer": "Google",
-      "createdAt": 1580361112755
+      "createdAt": 1580380782223
+    },
+    {
+      "id": "pCb5eFhJQv26liFqmmwvq",
+      "role": "Senior_Developer",
+      "name": "John Smith",
+      "employer": "Instagram",
+      "createdAt": 1580380782223
+    },
+    {
+      "id": "pCb5eFhJQv26liFqmmwvp",
+      "role": "Scrum_Master",
+      "name": "David Warner",
+      "employer": "Apple",
+      "createdAt": 1580380782223
     }
     ]
 }

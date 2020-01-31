@@ -2,16 +2,16 @@ const { gql } = require('apollo-server')
 
 const typeDefs = gql`
   enum Designation {
-    JuniorDeveloper
-    SeniorDeveloper
-    ScrumMaster
-    ProductOwner
+    Junior_Developer
+    Senior_Developer
+    Scrum_Master
+    Product_Owner
   }
   enum Employer {
     Google
     Twitter
     Apple
-    Amazon
+    Instagram
   }
 
 type Employee {
@@ -32,7 +32,7 @@ input NewEmployeeInput {
 input EmployeesListByRole {
   role: Designation!
 }
-input EmployeesListById {
+input EmployeesId {
   id: ID!
 }
 input updatedEmployee{
@@ -48,12 +48,12 @@ type Query {
   employees: [Employee]!
   employee(id: ID!): Employee!
   filterByEmployer(input:EmployeesListByRole!):[Employee]!
-  filterByEmployerId(input:EmployeesListById!):[Employee]!
+  filterByEmployerId(input:EmployeesId!):[Employee]!
 }
 
 type Mutation {
   addEmployee(input: NewEmployeeInput!): Employee!
-  deleteEmployee(input: EmployeesListById!):Employee!
+  deleteEmployee(input: EmployeesId!):Employee!
   updateEmployee(input: updatedEmployee!):Employee!
 }
 `;

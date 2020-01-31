@@ -1,0 +1,185 @@
+
+body{
+  background:#0d1544;
+  /* background:#2b335a; */
+}
+.full-page-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255,255,255, .8);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.App {
+  text-align: center;
+  width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1200px;
+}
+
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B5B8CE;
+    font-size: 2rem;
+    padding: 10px;
+    font-family: cursive;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    color: #ebebfb;
+    font-family: arial;
+  }
+  .card {
+    padding: 10px;
+    flex: 0 0 88%;
+    
+    margin: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    background: #252b4f;
+  } 
+  .card img {
+    max-width: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+  }
+  .card .text {
+    padding: 0 20px 20px;
+    font-family: cursive;
+  }
+  .card-action{
+    display: flex;
+    justify-content: space-between;
+    color: aquamarine;
+    padding: 0px 20px;
+    margin: 10px 0px 0px 0px;
+  }
+ .card-action span{
+   cursor:pointer;
+ }
+ .card-action span:hover{
+   cursor:pointer;
+   text-decoration:underline;
+ }
+ /****Forms***/
+ .form-container{
+    background: #1b2855;
+    padding: 20px;
+    color: white;
+   margin: 2rem auto;
+    text-align: left;
+    font-size: 20px;
+    font-family: cursive;
+ }
+ .form-field{
+   padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%;
+ }
+ .display-block{
+   display:block;
+   
+ }
+ form{
+   display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+ }
+ form>div{
+   width:98%;
+ }
+ .form-btn{
+   border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 36px;
+    background: #c7c709;
+    color: #1b2855;
+ }
+ .floating-form{
+    bottom: 0;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+ }
+ .floating-form>.form-container{
+   margin:4rem;
+ }
+ .floating-form-center{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+ }
+ .form-edit-btn{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 12px 20px;
+    width: 45%;
+    margin: 2px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 36px;
+    
+    color: #1b2855;
+ }
+ .update-btn{
+       background: #1e770a;
+    color: white;
+ }
+ .cancel-btn{
+       background: #771d08;
+    color: white;
+ }
+
+@media (min-width: 768px){
+  form>div{
+    width:48%;
+  }
+  .card {
+    padding: 10px;
+    flex: 0 0 43%;
+    margin: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    background: #252b4f;
+  } 
+}
+ @media (min-width: 992px){
+  form>div{
+    width:23%;
+  }
+  .card {
+    padding: 10px;
+    flex: 0 0 250px;
+    margin: 14px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
+    background: #252b4f;
+  } 
+}
