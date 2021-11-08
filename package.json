@@ -10,7 +10,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.9.16",
+    "apollo-server": "^2.25.3",
     "concurrently": "^5.1.0",
     "nanoid": "^2.1.10"
   }
