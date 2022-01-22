@@ -12,6 +12,6 @@
   "dependencies": {
     "apollo-server": "^2.9.16",
     "concurrently": "^5.1.0",
-    "nanoid": "^2.1.10"
+    "nanoid": "^3.1.31"
   }
 }
